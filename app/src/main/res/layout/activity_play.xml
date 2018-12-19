@@ -37,7 +37,10 @@
                             android:layout_width="@dimen/icon_100_width"
                             android:layout_height="@dimen/icon_100_height"
                             android:layout_gravity="center"
-                            android:src="@drawable/physics" />
+                            android:adjustViewBounds="false"
+                            android:cropToPadding="false"
+                            android:src="@drawable/animals"
+                            tools:srcCompat="@drawable/animals" />
 
                         <TextView
                             android:id="@+id/physics"
@@ -72,7 +75,8 @@
                             android:layout_width="@dimen/icon_100_width"
                             android:layout_height="@dimen/icon_100_height"
                             android:layout_gravity="center"
-                            android:src="@drawable/chemistry" />
+                            android:src="@drawable/chemistry"
+                            tools:srcCompat="@drawable/food" />
 
                         <TextView
                             android:id="@+id/chemistry"
