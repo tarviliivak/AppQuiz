@@ -12,119 +12,145 @@
         android:layout_height="match_parent">
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="853dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="78dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="10sp"
+                android:text=" START LEARNING NOW"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/color_card_4"
+                android:typeface="monospace" />
 
-                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/phy_card"
-                    android:layout_width="210dp"
-                    android:layout_height="210dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/margin_1"
-                    card_view:cardCornerRadius="@dimen/card_corner_2"
-                    card_view:cardElevation="@dimen/card_elevation"
-                    card_view:contentPadding="@dimen/card_content_padding">
 
-                    <LinearLayout
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/phy_card"
+                android:layout_width="160dp"
+                android:layout_height="182dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_1"
+                android:layout_marginBottom="@dimen/_10"
+                android:baselineAligned="false"
+                card_view:cardCornerRadius="@dimen/card_corner_2"
+                card_view:cardElevation="8dp"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+
+                <LinearLayout
+                    android:layout_width="143dp"
+                    android:layout_height="166dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="false"
+                        android:src="@drawable/nature"
+                        tools:srcCompat="@drawable/nature" />
+
+
+                    <TextView
+                        android:id="@+id/physics"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_marginTop="@dimen/_10"
+                        android:gravity="center"
+                        android:text="@string/physics"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp" />
 
-                        <ImageView
-                            android:layout_width="@dimen/icon_100_width"
-                            android:layout_height="@dimen/icon_100_height"
-                            android:layout_gravity="center"
-                            android:adjustViewBounds="false"
-                            android:cropToPadding="false"
-                            android:src="@drawable/animals"
-                            tools:srcCompat="@drawable/animals" />
 
-                        <TextView
-                            android:id="@+id/physics"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10"
-                            android:gravity="center"
-                            android:text="@string/physics"
-                            android:textColor="@android:color/black"
-                            android:textSize="@dimen/text_size_6"
-                            android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chem_card"
+                android:layout_width="160dp"
+                android:layout_height="182dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_1"
+                android:layout_marginBottom="@dimen/_10"
+                android:background="@drawable/custom_border"
+                card_view:cardCornerRadius="@dimen/card_corner_2"
+                card_view:cardElevation="8dp"
+                card_view:contentPadding="@dimen/card_content_padding">
 
-                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/chem_card"
-                    android:layout_width="200dp"
-                    android:layout_height="@dimen/box_height"
-                    android:layout_marginTop="@dimen/margin_1"
-                    android:layout_gravity="center"
-                    card_view:cardCornerRadius="@dimen/card_corner_2"
-                    card_view:cardElevation="@dimen/card_elevation"
-                    card_view:contentPadding="@dimen/card_content_padding">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <LinearLayout
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/food"
+                        tools:srcCompat="@drawable/food" />
+
+                    <TextView
+                        android:id="@+id/chemistry"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_marginTop="@dimen/_10"
+                        android:gravity="center"
+                        android:text="@string/chemistry"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-                        <ImageView
-                            android:layout_width="@dimen/icon_100_width"
-                            android:layout_height="@dimen/icon_100_height"
-                            android:layout_gravity="center"
-                            android:src="@drawable/chemistry"
-                            tools:srcCompat="@drawable/food" />
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bio_card"
+                android:layout_width="160dp"
+                android:layout_height="182dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_1"
+                card_view:cardCornerRadius="@dimen/card_corner_2"
+                card_view:cardElevation="8dp"
+                card_view:contentPadding="@dimen/card_content_padding">
 
-                        <TextView
-                            android:id="@+id/chemistry"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10"
-                            android:gravity="center"
-                            android:text="@string/chemistry"
-                            android:textColor="@android:color/black"
-                            android:textSize="@dimen/text_size_6"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/bio_card"
-                    android:layout_width="200dp"
-                    android:layout_height="@dimen/box_height"
-                    android:layout_marginTop="@dimen/margin_1"
-                    android:layout_gravity="center"
-                    card_view:cardCornerRadius="@dimen/card_corner_2"
-                    card_view:cardElevation="@dimen/card_elevation"
-                    card_view:contentPadding="@dimen/card_content_padding">
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/countries"
+                        tools:srcCompat="@drawable/countries" />
 
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/biology"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_marginTop="@dimen/_10"
+                        android:gravity="center"
+                        android:text="@string/biology"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
 
-                        <ImageView
-                            android:layout_width="@dimen/icon_100_width"
-                            android:layout_height="@dimen/icon_100_height"
-                            android:layout_gravity="center"
-                            android:src="@drawable/biology" />
 
-                        <TextView
-                            android:id="@+id/biology"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10"
-                            android:gravity="center"
-                            android:text="@string/biology"
-                            android:textColor="@android:color/black"
-                            android:textSize="@dimen/text_size_6"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
-
-            </LinearLayout>
+        </LinearLayout>
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
